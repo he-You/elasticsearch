@@ -4,7 +4,7 @@ spring:
   datasource:
     username: root
     password: 963553
-    url: jdbc:mysql://localhost:3306/blogdb?serverTimezone=UTC&useSSL=false
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useSSL=false
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 mybatis:
