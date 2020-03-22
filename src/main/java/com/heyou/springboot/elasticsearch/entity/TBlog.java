@@ -22,7 +22,7 @@ public class TBlog implements Serializable {
     /**
     * 作者
     */
-    private String auther;
+    private String author;
     /**
     * 内容
     */
@@ -53,12 +53,12 @@ public class TBlog implements Serializable {
         this.title = title;
     }
 
-    public String getAuther() {
-        return auther;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setAuther(String auther) {
-        this.auther = auther;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public Object getContent() {
