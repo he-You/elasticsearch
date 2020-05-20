@@ -1,11 +1,8 @@
-server:
-  port: 8888
-spring:
-  datasource:
-    username: root
-    password: 963553
-    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useSSL=false
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    type: com.alibaba.druid.pool.DruidDataSource
-mybatis:
-  mapper-locations: classpath:mapper/*.xml #注意：一定要对应mapper映射xml文件的所在路径
+#Elasticsearch配置
+elasticsearch:
+  host: 127.0.0.1
+  port: 9200
+  clustername: elasticsearch_heyou-macbook
+  search:
+    pool:
+      size: 5
