@@ -4,17 +4,19 @@ import com.heyou.springboot.elasticsearch.dao.ArticleRepository;
 import com.heyou.springboot.elasticsearch.entity.Article;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.elasticsearch.index.query.MatchPhraseQueryBuilder;
 import org.elasticsearch.index.query.MatchQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 
 import lombok.extern.slf4j.Slf4j;
 
+import javax.annotation.Resource;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
@@ -24,7 +26,7 @@ import java.util.UUID;
 @Slf4j
 @SpringBootTest
 class ElasticsearchApplicationTests {
-	@Autowired
+	@Resource
 	private ArticleRepository articleRepository;
 
 
