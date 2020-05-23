@@ -1,10 +1,10 @@
 server:
-  port: 8800
+  port: 8888
 #Elasticsearch配置
 elasticsearch:
   host: 127.0.0.1
   port: 9300
-  clustername: elasticsearch_heyou-macbook
+  clustername: elasticsearch
   search:
     pool:
       size: 5
